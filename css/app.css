@@ -1,8 +1,13 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-*{
+* {
     margin: 0;
     box-sizing: border-box;
+}
+
+.wrapper
+{
+    overflow:hidden;
 }
 body {
     font-family: 'Roboto', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -10,11 +15,13 @@ body {
     margin: 0;
     height: 100%;
 }
+
 html {
     height: 100%;
     scroll-behavior: smooth;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
@@ -25,16 +32,20 @@ span {
 .main {
     margin-top: 74px;
 }
+
 .centered-text-img {
     color: #ffffff;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
-.centered-text-img h2{
-    font-size: 3rem;
-}
-.centered-text-img p{
-    font-size: 2.5rem;
-}
+
+    .centered-text-img h2 {
+        font-size: 3rem;
+    }
+
+    .centered-text-img p {
+        font-size: 2.5rem;
+    }
+
 .center-hero-img {
     background: linear-gradient(rgb(0,0,0,0.60),rgb(0,0,0,0.60)), url("../images/portfolio.jpg") center/cover fixed no-repeat;
     height: 70vh;
@@ -59,27 +70,29 @@ span {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-.center
-{
+.center {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-.left-img{
+
+.left-img {
     width: 30%;
 }
-.logo-img{
+
+.logo-img {
     width: 30vw;
 }
+
 .navbar {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     position: fixed;
-    top:0;
-    width:100%;
+    top: 0;
+    width: 100%;
     overflow: hidden;
-    z-index:2137;
+    z-index: 2137;
 }
 
     .navbar ul {
@@ -114,7 +127,6 @@ span {
     position: relative;
 }
 
-
 .three-column {
     flex-basis: 100%;
     border: 2px;
@@ -127,6 +139,7 @@ span {
     box-shadow: 1px 2px 2px #444444;
     margin: 0 auto;
 }
+
 .tech-section {
     display: flex;
     align-items: stretch;
@@ -136,22 +149,18 @@ span {
     text-align: center;
 }
 
-.footer{
-   
-    background-color:#383838;
+.footer {
+    background-color: #383838;
     left: 0;
     padding: 2rem;
     bottom: 0;
     width: 100%;
     color: white;
-    text-align:left;
+    text-align: left;
 }
-
 
 @media screen and (max-width: 900px) {
     .tech-section {
         flex-wrap: wrap;
     }
 }
-
-
