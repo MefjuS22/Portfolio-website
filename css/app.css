@@ -1,11 +1,14 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+:root {
+    --dark-liver: #484349ff;
+    --linen: #f9ebe0ff;
+    --blue-munsell: #208aaeff;
+    --kelly-green: #3ec300ff;
+    --frostbite: #d741a7ff;
+}
 /* CSS HEX
---dark-liver: #484349ff;
---linen: #f9ebe0ff;
---blue-munsell: #208aaeff;
---kelly-green: #3ec300ff;
---fire-opal: #ef6461ff;
+
     */
 
 * {
@@ -120,7 +123,7 @@ span {
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background: #484349ff;
+        background: var(--dark-liver);
     }
 
     .navbar li {
@@ -133,10 +136,12 @@ span {
             text-align: center;
             padding: 25px 29px;
             text-decoration: none;
+            transition: all 0.3s linear;
         }
 
             .navbar li a:hover {
                 background-color: #2c2a2cff;
+                transition: all 0.3s linear;
             }
 
 .text-box {
@@ -145,6 +150,7 @@ span {
     margin: auto;
     background: #f9ebe0ff;
     position: relative;
+    text-align: justify;
 }
 
 .tech-section {
@@ -161,7 +167,7 @@ span {
     border: 2px;
     padding: 3rem;
     color: #fff;
-    background: #208aaeff;
+    background: var(--blue-munsell);
     align-items: center;
     text-align: center;
     border-radius: 25px;
@@ -178,7 +184,7 @@ span {
 }
 
 .footer {
-    background-color: #484349ff;
+    background-color: var(--dark-liver);
     left: 0;
     padding: 2rem;
     bottom: 0;
