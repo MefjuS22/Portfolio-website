@@ -7,9 +7,6 @@
     --kelly-green: #3ec300ff;
     --frostbite: #d741a7ff;
 }
-/* CSS HEX
-
-    */
 
 * {
     margin: 0;
@@ -155,11 +152,12 @@ span {
 
 .tech-section {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: stretch;
-    margin: 1.2rem auto;
-    width: 70vw;
+    align-content: center;
     gap: 1rem;
-    text-align: center;
+    margin-bottom: 1.2rem;
 }
 
 .tile {
@@ -171,7 +169,7 @@ span {
     align-items: center;
     text-align: center;
     border-radius: 25px;
-    box-shadow: 2px 2px 2px 2px #104456ff;
+    box-shadow: -16px 14px 32px -3px rgba(66, 68, 90, 1);
     margin: 0 auto;
     transition: all 0.1s linear;
 }
@@ -179,7 +177,7 @@ span {
 #column:hover {
     transition: all 0.1s linear;
     background: #1e7897ff;
-    box-shadow: 3px 2px 3px 3px #104456ff;
+    box-shadow: -16px 14px 32px 0px rgba(66, 68, 90, 1);
     transform: translateY(-1rem) scale(1.05);
 }
 
@@ -197,4 +195,6 @@ span {
     .tech-section {
         flex-wrap: wrap;
     }
+
+    .navbar
 }
